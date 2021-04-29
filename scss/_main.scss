@@ -1,0 +1,310 @@
+body {
+    font-family: $font;
+}
+
+h2 {
+    font-size: $font-xl;
+    text-align: center;
+    font-weight: $font-bold;
+}
+
+h3 {
+    font-size: $font-l;
+    text-align: center;
+    font-weight: $font-bold;
+}
+
+h4 {
+    font-size: $font-xl;
+    text-align: center;
+    font-weight: $font-bold;
+}
+
+p {
+    font-size: $font-s;
+    font-weight: $font-normal;
+    padding: 0.5rem 0;
+}
+
+@mixin imgFondo($mi-imagen) {
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    @if ($mi-imagen==Estilos) {
+        background-image: url("../images/TiposCerveza.jpg");
+    }
+    @else {
+        @if ($mi-imagen==Home) {
+            background-image: url("../images/Fondo1.jpg")
+        }
+        @else {
+            @if ($mi-imagen==Dudas) {
+                background-image: url("../images/Dudas.jpg")
+            }
+            @else {
+                @if ($mi-imagen==Planes) {
+                    background-image: url("../images/BoxCerveza.jpg")
+                }
+                @else {
+                    background-image: url("../images/Fondo2.jpg")
+                }
+            }
+        }
+    }
+}
+
+.principal {
+    text-align: center;
+    .principal__imgFondoHome {
+        @include imgFondo(Home)
+    }
+    .principal__imgFondoDudas {
+        @include imgFondo(Dudas)
+    }
+    .principal__imgFondoPlanes {
+        @include imgFondo(Planes)
+    }
+    .principal__imgFondoEstilos {
+        @include imgFondo(Estilos)
+    }
+    .principal__imgFondoConcepto {
+        @include imgFondo(Concepto)
+    }
+    .principal__titulo {
+        background: $color-titulo;
+        background: $backg-titulo;
+        .principal__titulo--primero {
+            color: $color-titulo;
+            font-size: $font-xxl;
+        }
+        .principal__titulo--segundo {
+            color: white;
+            font-size: $font-xl;
+            text-align: center;
+        }
+    }
+}
+
+.boton {
+    background-color: $backg-boton;
+    border-color: $backg-boton;
+    transition: all $transicion-gral;
+    &:hover {
+        transform: scale(1.2);
+        background-color: $backg-boton-hover;
+        transition: all $transicion-gral;
+    }
+}
+
+.bienvendida {
+    p {
+        text-align: left;
+    }
+}
+
+.table {
+    ul {
+        list-style: none;
+    }
+    .th1 {
+        width: $ancho-th1;
+    }
+    .th2 {
+        width: $ancho-th2;
+    }
+    .th3 {
+        width: $ancho-th3;
+    }
+    .masInfo {
+        color: $color-masInfo;
+        &:hover {
+            background-color: $color-masInfo-hover;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.modelos {
+    .modelo1 {
+        background: $backg-modeloA;
+        box-shadow: $sombras;
+        transition: all $transicion-gral;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $sombras;
+            transition: all $transicion-gral;
+        }
+    }
+    ul {
+        list-style: none;
+    }
+    .modelo1 ul li {
+        font-weight: bold;
+        line-height: 200%;
+    }
+}
+
+.contactanos p {
+    font-size: $font-xl;
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer {
+    li {
+        list-style-type: none;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: $font-xs;
+        font-weight: $font-light;
+    }
+    .logo img {
+        width: $logo-normal;
+    }
+    .redes img {
+        width: $redes-normal;
+    }
+}
+
+@media all and (max-width: 576px) {
+    p {
+        font-size: $font-xs;
+    }
+    li {
+        list-style-type: none;
+    }
+    .contactanos p {
+        font-size: $font-s;
+        font-weight: bold;
+    }
+    #footer {
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: $font-xxs;
+            font-weight: $font-light;
+        }
+        .logo img {
+            width: $logo-normal*2/3;
+        }
+        .redes img {
+            width: $redes-normal*4/5;
+        }
+    }
+}
+
+.diferenciales__imagen {
+    height: $logo-chico;
+    width: $logo-chico;
+}
+
+.func_fondo {
+    background: $fondo-val1;
+    background: $backg-valores1;
+    .funcionamiento__boxInfo {
+        padding: 1rem 2rem;
+        line-height: 2;
+    }
+    .funcionamiento__imagen img {
+        width: $ancho-ppal*0.6;
+        margin-left: $ancho-ppal*0.2;
+    }
+    ol li {
+        list-style: none;
+    }
+}
+
+#productos {
+    margin: 2rem auto;
+    padding: 2rem 0;
+    .planA {
+        border-radius: 20px;
+        background: $backg-modeloA;
+        transition: $transicion-gral;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $sombras;
+            transition: $transicion-gral;
+        }
+    }
+    .planB {
+        border-radius: 20px;
+        background: $backg-modeloB;
+        transition: $transicion-gral;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $sombras;
+            transition: $transicion-gral;
+        }
+    }
+    em {
+        font-size: $font-l;
+        margin: 1em 0;
+        font-weight: bold;
+        color: white;
+    }
+    .promo {
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+    span {
+        text-decoration: line-through;
+    }
+    .oferta {
+        color: $color-oferta;
+        font-size: $font-oferta;
+    }
+}
+
+#informacionEmpresa {
+    .valores__imagen img {
+        width: $ancho-ppal*0.5;
+        margin-left: $ancho-ppal*0.25;
+        border-radius: 500px;
+        box-shadow: $sombras;
+    }
+    .valor__fondo1 {
+        background: $backg-valores1;
+    }
+    .valor__fondo2 {
+        background: $backg-valores2;
+    }
+}
+
+.seleccion {
+    .seleccion__boton {
+        background-color: $backg-boton;
+        border-color: $backg-boton;
+        transition: all $transicion-gral;
+        &:hover {
+            transform: scale(1.1);
+            background-color: $backg-boton-hover;
+            transition: all $transicion-gral;
+        }
+        .seleccion__boton a {
+            font-size: $font-m;
+        }
+    }
+}
+
+.var {
+    .var__header {
+        font-size: $font-xl;
+        font-weight: $font-bold;
+        text-align: center;
+        color: $color-variedades;
+    }
+    .var__tipo__titulo {
+        font-size: $font-normal;
+        font-weight: $font-normal;
+        font-weight: bold;
+    }
+    .var__tipo__texto {
+        font-size: $font-s;
+    }
+}
