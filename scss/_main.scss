@@ -26,6 +26,11 @@ p {
     padding: 0.5rem 0;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 @mixin imgFondo($mi-imagen) {
     height: 75vh;
     background-size: cover;
@@ -105,9 +110,6 @@ p {
 }
 
 .table {
-    ul {
-        list-style: none;
-    }
     .th1 {
         width: $ancho-th1;
     }
@@ -138,12 +140,16 @@ p {
             transition: all $transicion-gral;
         }
     }
-    ul {
-        list-style: none;
-    }
     .modelo1 ul li {
         font-weight: bold;
         line-height: 200%;
+        font-size: $font-m;
+    }
+    .modelos__titulo {
+        font-size: $font-xl;
+        margin: 1em 0;
+        font-weight: bold;
+        color: white;
     }
 }
 
@@ -154,9 +160,6 @@ p {
 }
 
 #footer {
-    li {
-        list-style-type: none;
-    }
     a {
         color: white;
         text-decoration: none;
@@ -216,6 +219,7 @@ p {
     }
     ol li {
         list-style: none;
+        padding: 0;
     }
 }
 
@@ -243,7 +247,7 @@ p {
         }
     }
     em {
-        font-size: $font-l;
+        font-size: $font-xl;
         margin: 1em 0;
         font-weight: bold;
         color: white;
@@ -258,6 +262,10 @@ p {
     .oferta {
         color: $color-oferta;
         font-size: $font-oferta;
+    }
+    ul li {
+        font-weight: $font-bold;
+        line-height: 200%;
     }
 }
 
