@@ -21,7 +21,7 @@ h4 {
 }
 
 p {
-    font-size: $font-s;
+    font-size: $font-xs;
     font-weight: $font-normal;
     padding: 0.5rem 0;
 }
@@ -154,7 +154,7 @@ ul {
 }
 
 .contactanos p {
-    font-size: $font-xl;
+    font-size: $font-l;
     font-weight: bold;
     text-align: center;
 }
@@ -167,37 +167,10 @@ ul {
         font-weight: $font-light;
     }
     .logo img {
-        width: $logo-normal;
+        width: $logo-normal*2/3;
     }
     .redes img {
-        width: $redes-normal;
-    }
-}
-
-@media all and (max-width: 576px) {
-    p {
-        font-size: $font-xs;
-    }
-    li {
-        list-style-type: none;
-    }
-    .contactanos p {
-        font-size: $font-s;
-        font-weight: bold;
-    }
-    #footer {
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: $font-xxs;
-            font-weight: $font-light;
-        }
-        .logo img {
-            width: $logo-normal*2/3;
-        }
-        .redes img {
-            width: $redes-normal*4/5;
-        }
+        width: $redes-normal*4/5;
     }
 }
 
@@ -218,7 +191,6 @@ ul {
         margin-left: $ancho-ppal*0.2;
     }
     ol li {
-        list-style: none;
         padding: 0;
     }
 }
@@ -302,17 +274,66 @@ ul {
 
 .var {
     .var__header {
-        font-size: $font-xl;
+        font-size: $font-l;
         font-weight: $font-bold;
         text-align: center;
         color: $color-variedades;
     }
     .var__tipo__titulo {
-        font-size: $font-normal;
-        font-weight: $font-normal;
+        font-size: $font-s;
         font-weight: bold;
     }
     .var__tipo__texto {
+        font-size: $font-xs;
+    }
+}
+
+@media all and (min-width: 576px) {
+    p {
         font-size: $font-s;
+    }
+    li {
+        list-style-type: none;
+    }
+    .contactanos p {
+        font-size: $font-xl;
+    }
+    #footer {
+        a {
+            font-size: $font-xs;
+        }
+        .logo img {
+            width: $logo-normal;
+        }
+        .redes img {
+            width: $redes-normal;
+        }
+    }
+    .func_fondo {
+        ol li {
+            list-style-type: decimal;
+        }
+    }
+    .var {
+        .var__header {
+            font-size: $font-xl;
+        }
+        .var__tipo__titulo {
+            font-size: $font-m;
+        }
+        .var__tipo__texto {
+            font-size: $font-s;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    #informacionEmpresa {
+        .valores__imagen img {
+            width: $ancho-ppal*0.7;
+            margin-left: $ancho-ppal*0.15;
+            border-radius: 500px;
+            box-shadow: $sombras;
+        }
     }
 }

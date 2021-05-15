@@ -21,7 +21,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   padding: 0.5rem 0;
 }
@@ -160,7 +160,7 @@ ul {
 }
 
 .contactanos p {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
@@ -173,36 +173,11 @@ ul {
 }
 
 #footer .logo img {
-  width: 150px;
+  width: 100px;
 }
 
 #footer .redes img {
-  width: 50px;
-}
-
-@media all and (max-width: 576px) {
-  p {
-    font-size: 14px;
-  }
-  li {
-    list-style-type: none;
-  }
-  .contactanos p {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  #footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 200;
-  }
-  #footer .logo img {
-    width: 100px;
-  }
-  #footer .redes img {
-    width: 40px;
-  }
+  width: 40px;
 }
 
 .diferenciales__imagen {
@@ -226,7 +201,6 @@ ul {
 }
 
 .func_fondo ol li {
-  list-style: none;
   padding: 0;
 }
 
@@ -317,18 +291,59 @@ ul {
 }
 
 .var .var__header {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   text-align: center;
   color: #cd8a32;
 }
 
 .var .var__tipo__titulo {
-  font-size: 400;
-  font-weight: 400;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .var .var__tipo__texto {
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media all and (min-width: 576px) {
+  p {
+    font-size: 18px;
+  }
+  li {
+    list-style-type: none;
+  }
+  .contactanos p {
+    font-size: 28px;
+  }
+  #footer a {
+    font-size: 14px;
+  }
+  #footer .logo img {
+    width: 150px;
+  }
+  #footer .redes img {
+    width: 50px;
+  }
+  .func_fondo ol li {
+    list-style-type: decimal;
+  }
+  .var .var__header {
+    font-size: 28px;
+  }
+  .var .var__tipo__titulo {
+    font-size: 22px;
+  }
+  .var .var__tipo__texto {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  #informacionEmpresa .valores__imagen img {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 500px;
+    box-shadow: 0 0 10px 0 #7d7d7d;
+  }
 }
