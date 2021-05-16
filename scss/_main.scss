@@ -53,7 +53,12 @@ ul {
                     background-image: url("../images/BoxCerveza.jpg")
                 }
                 @else {
-                    background-image: url("../images/Fondo2.jpg")
+                    @if ($mi-imagen==Concepto) {
+                        background-image: url("../images/Fondo2.jpg")
+                    }
+                    @else {
+                        background-image: url("../images/WIP.jpg")
+                    }
                 }
             }
         }
@@ -76,6 +81,9 @@ ul {
     }
     .principal__imgFondoConcepto {
         @include imgFondo(Concepto)
+    }
+    .principal__imgFondoWip {
+        @include imgFondo(Wip)
     }
     .principal__titulo {
         background: $color-titulo;

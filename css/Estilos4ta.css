@@ -1,40 +1,48 @@
+/* line 1, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* line 5, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 h2 {
   font-size: 28px;
   text-align: center;
   font-weight: 700;
 }
 
+/* line 11, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 h3 {
   font-size: 24px;
   text-align: center;
   font-weight: 700;
 }
 
+/* line 17, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 h4 {
   font-size: 28px;
   text-align: center;
   font-weight: 700;
 }
 
+/* line 23, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 p {
   font-size: 14px;
   font-weight: 400;
   padding: 0.5rem 0;
 }
 
+/* line 29, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 ul {
   list-style: none;
   padding: 0;
 }
 
+/* line 68, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal {
   text-align: center;
 }
 
+/* line 70, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__imgFondoHome {
   height: 75vh;
   background-size: cover;
@@ -44,6 +52,7 @@ ul {
   background-image: url("../images/Fondo1.jpg");
 }
 
+/* line 73, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__imgFondoDudas {
   height: 75vh;
   background-size: cover;
@@ -53,6 +62,7 @@ ul {
   background-image: url("../images/Dudas.jpg");
 }
 
+/* line 76, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__imgFondoPlanes {
   height: 75vh;
   background-size: cover;
@@ -62,6 +72,7 @@ ul {
   background-image: url("../images/BoxCerveza.jpg");
 }
 
+/* line 79, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__imgFondoEstilos {
   height: 75vh;
   background-size: cover;
@@ -71,6 +82,7 @@ ul {
   background-image: url("../images/TiposCerveza.jpg");
 }
 
+/* line 82, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__imgFondoConcepto {
   height: 75vh;
   background-size: cover;
@@ -80,78 +92,103 @@ ul {
   background-image: url("../images/Fondo2.jpg");
 }
 
+/* line 85, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
+.principal .principal__imgFondoWip {
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../images/WIP.jpg");
+}
+
+/* line 88, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__titulo {
   background: #6c757d;
   background: radial-gradient(circle, rgba(77, 204, 204, 0.70632) 50%, rgba(57, 136, 208, 0.664303) 100%);
 }
 
+/* line 91, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__titulo .principal__titulo--primero {
   color: #6c757d;
   font-size: 42px;
 }
 
+/* line 95, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .principal .principal__titulo .principal__titulo--segundo {
   color: white;
   font-size: 28px;
   text-align: center;
 }
 
+/* line 103, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .boton {
   background-color: #f26d21;
   border-color: #f26d21;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 107, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .boton:hover {
   transform: scale(1.2);
   background-color: #b6551c;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 115, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .bienvendida p {
   text-align: left;
 }
 
+/* line 121, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .table .th1 {
   width: 8%;
 }
 
+/* line 124, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .table .th2 {
   width: 40%;
 }
 
+/* line 127, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .table .th3 {
   width: 15%;
 }
 
+/* line 130, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .table .masInfo {
   color: #17a2b8;
 }
 
+/* line 132, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .table .masInfo:hover {
   background-color: #117483;
   color: white;
   text-decoration: none;
 }
 
+/* line 141, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .modelos .modelo1 {
   background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
   box-shadow: 0 0 10px 0 #7d7d7d;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 145, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .modelos .modelo1:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px 0 #7d7d7d;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 151, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .modelos .modelo1 ul li {
   font-weight: bold;
   line-height: 200%;
   font-size: 22px;
 }
 
+/* line 156, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .modelos .modelos__titulo {
   font-size: 28px;
   margin: 1em 0;
@@ -159,12 +196,14 @@ ul {
   color: white;
 }
 
+/* line 164, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .contactanos p {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 
+/* line 171, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #footer a {
   color: white;
   text-decoration: none;
@@ -172,67 +211,80 @@ ul {
   font-weight: 200;
 }
 
+/* line 177, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #footer .logo img {
   width: 100px;
 }
 
+/* line 180, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #footer .redes img {
   width: 40px;
 }
 
+/* line 185, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .diferenciales__imagen {
   height: 100px;
   width: 100px;
 }
 
+/* line 190, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .func_fondo {
   background: #e3e2df;
   background: linear-gradient(180deg, #e3e2df 0%, white 75%);
 }
 
+/* line 193, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .func_fondo .funcionamiento__boxInfo {
   padding: 1rem 2rem;
   line-height: 2;
 }
 
+/* line 197, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .func_fondo .funcionamiento__imagen img {
   width: 60%;
   margin-left: 20%;
 }
 
+/* line 201, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .func_fondo ol li {
   padding: 0;
 }
 
+/* line 206, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos {
   margin: 2rem auto;
   padding: 2rem 0;
 }
 
+/* line 209, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .planA {
   border-radius: 20px;
   background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
   transition: 0.5s ease-in-out;
 }
 
+/* line 213, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .planA:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px 0 #7d7d7d;
   transition: 0.5s ease-in-out;
 }
 
+/* line 219, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .planB {
   border-radius: 20px;
   background: linear-gradient(318deg, #fdbb2d 0%, #22c1c3 100%);
   transition: 0.5s ease-in-out;
 }
 
+/* line 223, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .planB:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px 0 #7d7d7d;
   transition: 0.5s ease-in-out;
 }
 
+/* line 229, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos em {
   font-size: 28px;
   margin: 1em 0;
@@ -240,25 +292,30 @@ ul {
   color: white;
 }
 
+/* line 235, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .promo {
   font-weight: bold;
   padding-bottom: 1em;
 }
 
+/* line 239, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos span {
   text-decoration: line-through;
 }
 
+/* line 242, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos .oferta {
   color: #f7f7f7;
   font-size: 36px;
 }
 
+/* line 246, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #productos ul li {
   font-weight: 700;
   line-height: 200%;
 }
 
+/* line 253, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #informacionEmpresa .valores__imagen img {
   width: 50%;
   margin-left: 25%;
@@ -266,30 +323,36 @@ ul {
   box-shadow: 0 0 10px 0 #7d7d7d;
 }
 
+/* line 259, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #informacionEmpresa .valor__fondo1 {
   background: linear-gradient(180deg, #e3e2df 0%, white 75%);
 }
 
+/* line 262, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 #informacionEmpresa .valor__fondo2 {
   background: linear-gradient(180deg, white 25%, #e3e2df 100%);
 }
 
+/* line 268, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .seleccion .seleccion__boton {
   background-color: #f26d21;
   border-color: #f26d21;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 272, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .seleccion .seleccion__boton:hover {
   transform: scale(1.1);
   background-color: #b6551c;
   transition: all 0.5s ease-in-out;
 }
 
+/* line 277, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .seleccion .seleccion__boton .seleccion__boton a {
   font-size: 22px;
 }
 
+/* line 284, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .var .var__header {
   font-size: 24px;
   font-weight: 700;
@@ -297,49 +360,62 @@ ul {
   color: #cd8a32;
 }
 
+/* line 290, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .var .var__tipo__titulo {
   font-size: 18px;
   font-weight: bold;
 }
 
+/* line 294, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
 .var .var__tipo__texto {
   font-size: 14px;
 }
 
 @media all and (min-width: 576px) {
+  /* line 300, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   p {
     font-size: 18px;
   }
+  /* line 303, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   li {
     list-style-type: none;
   }
+  /* line 306, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   .contactanos p {
     font-size: 28px;
   }
+  /* line 310, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   #footer a {
     font-size: 14px;
   }
+  /* line 313, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   #footer .logo img {
     width: 150px;
   }
+  /* line 316, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   #footer .redes img {
     width: 50px;
   }
+  /* line 321, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   .func_fondo ol li {
     list-style-type: decimal;
   }
+  /* line 326, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   .var .var__header {
     font-size: 28px;
   }
+  /* line 329, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   .var .var__tipo__titulo {
     font-size: 22px;
   }
+  /* line 332, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   .var .var__tipo__texto {
     font-size: 18px;
   }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
+  /* line 340, ../Clase 16 - Subida al server/4ta Entrega Projecto/scss/_main.scss */
   #informacionEmpresa .valores__imagen img {
     width: 70%;
     margin-left: 15%;
@@ -347,3 +423,5 @@ ul {
     box-shadow: 0 0 10px 0 #7d7d7d;
   }
 }
+
+/*# sourceMappingURL=Estilos4ta.css.map */
